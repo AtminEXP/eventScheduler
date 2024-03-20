@@ -1,0 +1,79 @@
+.calendar-container {
+    display: flex;
+  }
+  
+  /* ... other styles ... */
+  .calendar-header img {
+    width: 10%; /* Make the image take the full width of its container */
+    height: auto; /* Maintain the aspect ratio */
+    /* Add a border below the image if needed */
+  }
+  
+  /* ... (The rest of your existing CSS) */
+  
+
+.event-list-container {
+    width: 250px; /* Adjust width as needed */
+    margin-right: 20px; /* Space between list and calendar */
+    padding-top: 20px;
+  }
+  
+  .event-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .event-list-item {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    transition: 0.3s;
+  }
+  
+  .event-list-item:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  .event-header {
+    color: #555;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .event-date {
+    font-size: 14px;
+    color: #777;
+    margin: 5px 0;
+  }
+  
+  .event-duration {
+    font-size: 14px;
+    color: #777;
+    margin: 5px 0;
+  }
+  
+  .register-button {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 14px;
+    margin: 10px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .register-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .full-calendar-container {
+    flex-grow: 1;
+  }
+  
