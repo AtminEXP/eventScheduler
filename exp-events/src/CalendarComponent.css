@@ -1,5 +1,8 @@
 .calendar-container {
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
   }
   
   /* ... other styles ... */
@@ -11,17 +14,24 @@
   
   /* ... (The rest of your existing CSS) */
   
-
-.event-list-container {
-    width: 250px; /* Adjust width as needed */
-    margin-right: 20px; /* Space between list and calendar */
-    padding-top: 20px;
+  .event-list-container {
+    flex: 1; /* Allows the container to grow and fill the available space */
+    padding: 10px; /* Adds some padding around the list for spacing */
+    max-width: 30%; /* Adjust based on your layout preference */
+    overflow-y: auto; /* Adds a vertical scroll bar if the content overflows */
+    max-height: 90vh; /* Sets a maximum height for the list container */
   }
   
   .event-list {
     list-style-type: none;
     padding: 0;
   }
+
+.full-calendar-container,
+.event-list-container {
+  flex: 1; /* Allows both children to grow and fill the container */
+  padding: 10px; /* Adds some padding around the children for spacing */
+}
   
   .event-list-item {
     background-color: #ffffff;
