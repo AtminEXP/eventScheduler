@@ -1,4 +1,4 @@
-const express = require('express');
+  const express = require('express');
 const axios = require('axios');
 const ical = require('ical.js');
 const cors = require('cors');
@@ -15,8 +15,11 @@ app.use(cors({
 app.get('/calendar-events', async (req, res) => {
   try {
     const icsUrls = [
-        'https://calendar.google.com/calendar/ical/exprealty.net_bdno70mljh0lpokh6s15cnnvak%40group.calendar.google.com/public/basic.ics',
-        'https://calendar.google.com/calendar/ical/exprealty.net_blpo463c5dhnr1tnekbla6umdk%40group.calendar.google.com/public/basic.ics'
+      //6 calendars
+      'https://calendar.google.com/calendar/ical/exprealty.com_5ch808oclndj5grro9tm5ve9co%40group.calendar.google.com/public/basic.ics',
+      'https://calendar.google.com/calendar/ical/exprealty.net_bdno70mljh0lpokh6s15cnnvak%40group.calendar.google.com/public/basic.ics',
+      'https://calendar.google.com/calendar/ical/exprealty.net_blpo463c5dhnr1tnekbla6umdk%40group.calendar.google.com/public/basic.ics'
+
       // Add more URLs as needed
     ];
 

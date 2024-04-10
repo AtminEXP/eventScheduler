@@ -5,6 +5,9 @@
     align-items: start;
   }
   
+  .display-column {
+    display: flex;
+  }
   /* ... other styles ... */
   .calendar-header img {
     width: 10%; /* Make the image take the full width of its container */
